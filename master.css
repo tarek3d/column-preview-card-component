@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --transparent-white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray_background_headings_buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--very-light-gray_background_headings_buttons);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-weight: 900; */
+}
+
+.card {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.child-card{
+    width: 340px;
+    padding: 45px;
+}
+
+.child-card:nth-child(1){
+    background-color: var(--Brightorange);
+}
+.child-card:nth-child(2){
+    background-color: var(--Darkcyan);
+}
+.child-card:nth-child(3){
+    background-color: var(--Verydarkcyan);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+
+    color: var(--very-light-gray_background_headings_buttons);
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-transform: uppercase;
+    /* font-variation-settings: "wdth" 200, "wght" 400; */
+}
+
+p {
+    color: var(--very-light-gray_background_headings_buttons);
+    line-height: 2;
+    padding: 19px;
+}
+
+.add-botton {
+    width: 150px;
+    height: 55px;
+    background-color: var(--very-light-gray_background_headings_buttons);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+}
+
+div.child-card:nth-child(1) > div.add-botton{
+    color: var(--Brightorange);
+}
+
+div.child-card:nth-child(2) > div.add-botton{
+    color: var(--Darkcyan);
+}
+
+div.child-card:nth-child(3) > div.add-botton{
+    color:var(--Verydarkcyan);
+}
+
+div.add-botton:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--very-light-gray_background_headings_buttons) !important;
+    border: 2px solid var(--very-light-gray_background_headings_buttons);
+}
